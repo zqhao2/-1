@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;/*元素的内间距*/
+            margin: 0;/*外间距*/
+            box-sizing: border-box;/*box-sizing的取值为border-box*/
+        }
+
+        a {
+            color: black;/*颜色*/
+            text-decoration: none;/*无下划线或上划线或删除线*/
+        }
+
+        h1,
+        h2 {
+            font-weight: 400;/*字的粗细*/
+            font-size: 16px;/*字的大小*/
+        }
+
+        input {
+            outline: none;
+            border: none;
+        }
+
+        .box {
+            background: url(./img/u=1628315554\,2506157262&fm=253&fmt=auto.webp) no-repeat;
+            background-size: 100% 1500px;/*背景的大小和占比*/
+            width: 100%;/*宽度占比*/
+            height: 1500px;/*高度*/
+            padding: 50px;/*内间距*/
+        }
+s
+        .b1 {
+            display: flex;/*定义元素显示框类型*/
+            align-items: center;/*对齐*/
+            justify-content: space-between;/*对齐*/
+        }
+
+        h1 {
+            font-size: 25px;/*h1中字的大小*/
+            font-weight: bolder;/*h1中字的粗细*/
+        }
+
+        .b1 a {
+            padding: 15px;/*内间距*/
+            background: white;/*背景颜色*/
+            border-radius: 10px;/*设置边框的圆角效果*/
+        }
+
+        .b1 a:hover {
+            background: black;
+            color: white;
+            font-size: 700px;
+        }
+
+        textarea {
+            width: 400px;
+            height: 80px;
+        }
+
+        input {
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            margin: 20px 0;
+            font-size: 22px;
+            font-weight: bolder;
+        }
+
+        ul li {
+            padding: 15px 0;
+        }
+        button{
+            cursor: pointer;
+            margin: 0 20px;
+        }
+        button:hover {
+            background: black;
+            color: white;
+            border-radius: 5px;
+            box-shadow: 0px 2px 5px 5px #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="b1">
+            <h1>关于可以转生这档事</h1>
+
+        </div>
+        <form action="./login.html" method="get">
+            <label for="">我知道你</label>
+            <br>
+            <textarea>
+                你本是家世县释的千金大小姐/流大少爷, 期被进计多端的账人所害， 家人弃你。韩门遂你。甚至断我筋脉， 五来一世。一定要当个爽文主角!
+            </textarea><br>
+            <label for="">昵称:</label>
+            <input type="text" placeholder="请输入你心仪的昵称">
+            <br>
+            <label for="">性别:</label>
+            <input type="radio" name="sex"><span>男</span>
+            <input type="radio" name="sex"><span>女</span>
+            <br>
+            <label for="">转生地区：</label>
+            <select name="" id="">
+                <option value="">古代</option>
+                <option value="">近代</option>
+                <option value="">侏罗纪</option>
+                <option value="">史前</option>
+                <option value="">冰河世纪</option>
+            </select>
+            <br>
+            <label for="">
+                选择你的突出优点:
+            </label>
+            <input type="radio" name="better"><span>智力</span>
+            <input type="radio" name="better"><span>颜值</span>
+            <input type="radio" name="better"><span>身子骨硬朗</span>
+            <br>
+            <label for="">
+                选择天赋点（允许（我全都要））:
+            </label>
+            <input type="checkbox"><span>魔法棒（不知道有什么用）</span>
+            <input type="checkbox"><span>开一扇窗（随机颜值<0时，或得一次额外锦囊）</span>
+                    <input type="checkbox"><span>天生抑郁（快乐-3）</span>
+                    <input type="checkbox">智能型手机（闯荡异世界发挥作用max）
+                    <input type="checkbox">贪婪（家境+10）
+                    <input type="checkbox">天生抑郁（快乐-3）
+                    <input type="checkbox"><span>迟来之财（90岁家境+4）</span>
+                    <input type="checkbox"><span>抑郁风情（当快乐<1时，异性缘概率up！）
+                            <h2>
+                                你还是很强的
+                            </h2>
+                            <ul>
+                                <li>只是被克制了，被针对了，掉帧了</li>
+                                <li>蚊子太多，指甲没剪，没手感 </li>
+                                <li>蚂蚁在爬，环境陌生，低血糖发作而已</li>
+                            </ul>
+                            <h2>
+                                来吧不甘心的人类，与吾缔结契约吧
+                            </h2>
+                            <input type="radio"><span>Yes，I do!</span>
+                            <br>
+                            <button id="myButton" type="submit">支付六元，成功缔结契约</button>
+                            <button type="reset">重置</button>
+        </form>
+    </div>
+</body>
+
+</html>
